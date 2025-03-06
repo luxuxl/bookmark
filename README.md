@@ -8,8 +8,6 @@
 
 Convert your **plain bookmark** files into a **static web app**.
 
-![YAML to App diagram](assets/img/workflow.svg)
-
 </div>
 
 - **Share** your bookmarks app via a single self-contained HTML file.
@@ -50,6 +48,16 @@ static-marks build bookmarks.yml > bookmarks.html
 ```
 
 - Open `bookmarks.html` in your browser.
+
+## Deploy on Vercel
+
+Add this to Vercel Project's Build Command, automatically build newest Chrome Bookmarks
+
+```shell
+npm install -g static-marks
+ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml
+static-marks build bookmarks.yml > bookmarks.html
+```
 
 ## Usage
 
