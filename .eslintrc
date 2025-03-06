@@ -1,3 +1,0 @@
-{
-  "extends": ["@darekkay/eslint-config/nodejs"]
-}
