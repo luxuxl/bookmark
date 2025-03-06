@@ -37,7 +37,7 @@ npm install -g static-marks
 - Create a plain text `bookmarks.yml` [YAML file](#file-format) containing your bookmarks. Alternatively, [import](#import-bookmarks) your existing browser bookmarks:
 
 ```shell
-static-marks import browser-bookmarks.html > bookmarks.yml
+# static-marks import browser-bookmarks.html > bookmarks.yml
 
 # 匹配最新的 Chrome 的 Bookmark
 ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml
