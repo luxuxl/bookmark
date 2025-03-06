@@ -19,14 +19,6 @@ Convert your **plain bookmark** files into a **static web app**.
 
 🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html)
 
-## Demo
-
-<div align="center" class="text-center">
-
-![Static Marks Screencast](assets/img/screencast.gif)
-
-</div>
-
 ## Features
 
 - Use custom browser search engines with a `?search=%s` URL param ([example](https://darekkay.com/static-marks/demo/default.html?search=fire)).
@@ -55,30 +47,6 @@ static-marks build bookmarks.yml > bookmarks.html
 ```
 
 - Open `bookmarks.html` in your browser.
-
-## Installation
-
-This tool requires Node.js version 12+.
-
-- As a globally available CLI tool:
-
-```bash
-npm install -g static-marks
-```
-
-- As a local dependency in your project:
-
-```bash
-npm install --save static-marks
-```
-
-- Without installing:
-
-```shell
-npx static-marks <command>
-```
-
-- As a [docker container](https://github.com/gaerfield/static-marks-docker) (unofficial).
 
 ## Usage
 
