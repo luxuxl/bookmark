@@ -38,6 +38,9 @@ npm install -g static-marks
 
 ```shell
 static-marks import browser-bookmarks.html > bookmarks.yml
+
+# 匹配最新的 Chrome 的 Bookmark
+ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml
 ```
 
 - [Build](#build-bookmarks-app) your bookmarks app:
