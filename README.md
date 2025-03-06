@@ -39,7 +39,7 @@ npm install -g static-marks
 ```shell
 # static-marks import browser-bookmarks.html > bookmarks.yml
 
-# 匹配最新的 Chrome 的 Bookmark
+# 将最新导出的 Chrome 的 Bookmark 转为 yml 格式
 ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml
 ```
 
