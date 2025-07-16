@@ -4,27 +4,20 @@
 [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks)
 [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
 
-<div align="center" class="text-center">
-
-Convert your **plain bookmark** files into a **static web app**.
-
-</div>
-
-- **Share** your bookmarks app via a single self-contained HTML file.
-- Use with **any modern browser**.
-- **Import** bookmarks from Chrome, Firefox or Pocket.
-- It's **free** and [open source](https://github.com/darekkay/static-marks).
-
-🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html)
-
 ## Features
 
-- Use custom browser search engines with a `?search=%s` URL param ([example](https://darekkay.com/static-marks/demo/default.html?search=fire)).
-  - In Firefox, right-click the Static Marks search field and select "Add a Keyword for this Search".
-- Use custom web page templates. If you don't like the default UI, provide your own ([example](https://darekkay.com/static-marks/demo/custom.html) based on [this template](https://github.com/darekkay/static-marks/blob/master/docs/examples/templates/custom.html)).
+- Share your bookmarks via a website. [demo](https://darekkay.com/static-marks/demo/default.html)
+
+- Search your bookmarks via a `?search=%s` URL param. ([example](https://darekkay.com/static-marks/demo/default.html?search=fire))
+  - It can be added into browser as custom search engine.
+
+- Custom web page templates if you don't like the default UI. ([example](https://darekkay.com/static-marks/demo/custom.html) based on [this template](https://github.com/darekkay/static-marks/blob/master/docs/examples/templates/custom.html)).
+
 - Dark Mode.
 
-## Quickstart
+## Deploy
+
+### Local
 
 - [Install](#installation) Static Marks:
 
@@ -32,12 +25,12 @@ Convert your **plain bookmark** files into a **static web app**.
 npm install -g static-marks
 ```
 
-- Create a plain text `bookmarks.yml` [YAML file](#file-format) containing your bookmarks. Alternatively, [import](#import-bookmarks) your existing browser bookmarks:
+- Create a [YAML file](#file-format) `bookmarks.yml` containing your bookmarks. Alternatively, convert your browser bookmarks to YAML file:
 
 ```shell
 # static-marks import browser-bookmarks.html > bookmarks.yml
 
-# 将最新导出的 Chrome 的 Bookmark 转为 yml 格式
+# 将最新导出的 Chrome 书签转为 yml 文件
 ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml
 ```
 
@@ -47,9 +40,7 @@ ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmark
 static-marks build bookmarks.yml > bookmarks.html
 ```
 
-- Open `bookmarks.html` in your browser.
-
-## Deploy on Vercel
+### Vercel
 
 Add this to Vercel Project's Build Command, automatically build newest Chrome Bookmarks
 
