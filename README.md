@@ -46,11 +46,13 @@ static-marks build bookmarks.yml > bookmarks.html
 
 ### Vercel
 
-Add this to Vercel Project's Build Command, automatically build newest Chrome Bookmarks
+- Add this to Vercel Project's Build Command, automatically build newest Chrome Bookmarks
 
 ```shell
 npm install -g static-marks; ls -U bookmarks_*.html | head -1 | xargs -I {} static-marks import {} > bookmarks.yml; static-marks build bookmarks.yml > bookmarks.html
 ```
+
+- Upload bookmarks to this repository, it will automatically update.
 
 ## Usage
 
