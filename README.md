@@ -6,9 +6,13 @@
 
 ## Features
 
-- Share your bookmarks via a website. [demo](https://darekkay.com/static-marks/demo/default.html)
+- Share your bookmarks via a website. ([demo](https://darekkay.com/static-marks/demo/default.html))
+
+
 
 - Search your bookmarks via a `?search=%s` URL param. ([example](https://darekkay.com/static-marks/demo/default.html?search=fire))
+
+
   - It can be added into browser as custom search engine.
 
 - Custom web page templates if you don't like the default UI. ([example](https://darekkay.com/static-marks/demo/custom.html) based on [this template](https://github.com/darekkay/static-marks/blob/master/docs/examples/templates/custom.html)).
