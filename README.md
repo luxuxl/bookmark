@@ -247,5 +247,3 @@ This project follows the [all-contributors](https://allcontributors.org) specifi
 ## License
 
 This project and its contents are open source under the [MIT license](https://github.com/darekkay/static-marks/blob/master/LICENSE).
-
-Test
